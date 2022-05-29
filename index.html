@@ -1,37 +1,89 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>Сайт начинающего верстальщика</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Первая страница</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+      .rounded-img {
+        width: 60%;
+        border-radius: 60%;
+        box-shadow: 0 0 100px rgba(162, 151, 163, 50);
+        padding: 0em;
+        margin-bottom: 1em;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <p>Блог</p>
-      <nav>
-        <a href="index.html">На главную</a>
-      </nav>
-    </header>
-    <main>
-      <article>
-        <h1>День пятнадцатый. Галерея селфи</h1>
-        <p>Сегодня опять заходил Кекс, сказал, что для его бизнеса на сайте ему нужно больше селфи, как в инстаграме. Сделали с ним небольшую селфи-галерею. При нажатии на миниатюру открывается крупное изображение.</p>
-        <p>
-          <!-- Оберните картинку ниже в ссылку -->
-          <a href="photo-1.html"><img src="files/preview-1.jpg" alt="Фоточка Кекса" width="115" height="77">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand p-0" href="/">
+          <img src="MS.png" alt="Logo" width="80" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="places.html">Favorite places</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-lg-6 сol-md-8 сol-sm-12 mx-auto">
+          <img class="rounded-img" src="3cat.jpg" alt="Kotiki" width="300" />
+          <h1 class="fw-light">Xomak Smaga</h1>
+          <p class="lead text-muted">
+            Хомячек,финичики и рыжык - хорошие котики.И бла бла бла бла и бла
+            бла b т .д. и тп бла
+          </p>
+          <p>Жирний кот</p>
+          <a
+            href="https://stashchuk.com"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            Мужик
           </a>
-          <a href="photo-2.html"><img src="files/preview-2.jpg" alt="Фоточка Кекса" width="115" height="77">
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            Ютубчек
           </a>
-          <a href="photo-3.html"><img src="files/preview-3.jpg" alt="Фоточка Кекса" width="115" height="77">
-          </a>
-        </p>
-      </article>
-      <aside>
-        Тут могла быть ваша реклама
-      </aside>
-    </main>
-    <footer>
-      Подвал сайта
-    </footer>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
